@@ -31,7 +31,7 @@ const createDivsForChars = (word) => {
 const generateLetterButtons = () => {
   const letterButtonContainer = document.querySelector('#letter-buttons');
   for (const char of ALPHABET) {
-    letterButtonContainer.insertAdjacentHTML('beforeend', `<button>${char}</button>`);
+    letterButtonContainer.insertAdjacentHTML('beforeend', `<button class='letter-button'>${char}</button>`);
   }
 };
 
@@ -49,8 +49,15 @@ const isLetterInWord = (letter) => document.querySelector(`div.${letter}`) !== n
 
 // Called when `letter` is in word. Update contents of divs with `letter`.
 //
+const buttons = document.querySelectorAll('letter-button'); // this is outputting a array of html elements
 const handleCorrectGuess = (letter) => {
   // Replace this with your code
+  
+  // if the button that is clicked (button contains the letter) has a class of letter within a div that is in the word..
+  // return true
+  // all divs with the
+  //document.querySelector(<button>`${letter}`</button>)
+  
 };
 
 //
